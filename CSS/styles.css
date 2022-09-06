@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica;
+}
+
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px;
+}
+
+header {
+  height: 4rem;
+  padding: 2rem 2rem;
+}
+
+.menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.menu-icon{
+  font-size: 2em;
+  color: #8f8f8f;
+}
+
+nav {
+  position: absolute;
+  top:4rem;
+  left:0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+nav ul li {
+  padding: 0 2rem;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 0.3rem 0;
+  color: #1b1b1b;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  color: #eb5b5b;
+}
+
+#checkbox {
+  display: none;
+}
+
+#checkbox:checked ~ nav ul {
+  max-height: 200px;
+  padding: 1rem 0;
+  transition: all 0.5s;
+}
+
+/* END of NAV BAR============= */
+
+.SignUpButton {
+  background-color: white;
+  border: 4px solid #eb4e06;
+  border-radius: 60px;
+  color: black;
+  padding: 24px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.SignUpButton:hover{
+  background-color: #eb4e06;
+  color: white;
+}
+
+.first_part{
+  display: flex;
+  justify-content: space-between;
+  padding: 2.3rem 2rem;
+}
+
+.first_part section{
+  width: 70%;
+}
+
+.first_part aside{
+  width: 30%;
+  }
+
+.img_robot{
+  height: 35rem;
+  transform: translateX(-120px);
+}
+
+.first_part h3{
+  color: #FF3998;
+  padding: 8rem 0 1.8rem 0;
+  letter-spacing: 0.15em;
+}
+
+.first_part h1{
+  font-size: 3.2em;
+  font-weight: bolder;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.first_part  p{
+  color: #4d4d4d;
+  font-size: 1.4em;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  padding-bottom: 1rem;
+}
+
+.Second_part{
+  background-image: url(/assets/background.svg);
+  background-position: center;
+  background-size: cover;
+  margin: 3rem -4rem 0 -4rem;
+  padding: 5rem 0 5rem 0;
+  border-radius: 15px;
+}
+
+.Second_part h1, .Third_part h1{
+  font-size: 2.6em;
+  margin: 0;
+  padding: 2rem 2rem;
+  letter-spacing: 0.04em;
+}
+
+.Second_part  p, .Third_part p{
+  font-size: 1.4em;
+  letter-spacing: 0.04em;
+  padding: 0 2rem;
+  line-height: 1.4;
+}
+
+.Second_part h1{
+  padding: 0 6rem;
+}
+
+.Second_part  p{
+  padding: 0 6rem;
+}
+
+.companies_logo{
+padding: 4rem 2rem;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+gap: 1.5rem;
+justify-content: space-between;
+}
+
+.comp_logo_4{
+  display: none;
+}
+
+/* Boom pavadinimo sutrumpinimas */
+.comp_logo_1 {
+  object-fit: cover;
+  object-position: 80px 0;
+  transform: translate(-80px, 0);
+}
+
+.Third_part a{
+  color: #4d4d4d;
+}
+
+.NFT_Cards_Container{
+  padding: 4rem 2rem 4rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1.8rem;
+  overflow-x:auto;
+  /* justify-items: center; */
+  justify-content: space-between;
+}
+
+.CardClass{
+  max-width: max-content;
+  background-color: #dddddd;
+  border-radius: 15px;
+}
+
+.NFT_description{
+  padding: 0.8rem 0.1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.NFT_Left_text, .NFT_Right_text{
+display: grid;
+grid-auto-flow: row;
+gap: 0.7rem;
+align-content: center;
+justify-content: center;
+}
+
+.NFT_Right_text{
+  text-align: right;
+}
+
+.NFT_Right_text img{
+  float: left;
+  height: 1.5rem;
+  transform: translate(-15px, -5px);
+}
+
+.NFT_Left_text h5{
+  font-size: 0.8em;
+  color: #797900;
+  padding: 0;
+  margin: 0;
+}
+
+.NFT_Left_text h4, .NFT_Right_text h4{
+  font-size: 1em;
+  color: #171717;
+}
+
+.NFT_Left_text h6, .NFT_Right_text h6{
+  font-size: 0.8em;
+  color: #5d5d5d;
+}
+
+.img_robot2{
+  margin-top: 14rem;
+  height: 30rem;
+}
+
+.text_at_the_end{
+  color: #454545;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.text_at_the_end:hover {
+  opacity: 0.9;
+}
+
+.bottom_info h3 {
+  color: #454545;
+}
+
+.bottom_info{
+  display: grid;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.bottom_Contact, .bottom_about, .bottom_NFT, .bottom_Social{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0.1rem;
+  align-content: left;
+  justify-content: top;
+  padding-bottom: 2rem;
+  }
+
+.Left_bottom{
+  grid-column: 1/3;
+}
+
+.SocialNw .fa {
+  padding: 1rem 0.8rem 0 0;
+  font-size: 1.4rem;
+  text-decoration: none;
+  margin: 0;
+  color: #8f8f8f;
+}
+
+.fa:hover {
+  opacity: 0.9;
+}
+
+footer{
+  display: flex;
+  color: #8f8f8f;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p:last-child{
+  display: none;
+}
+
+.separator, .separator2{
+  background-color: #5f5f5f3f;
+  height: 2px;
+  width: auto;
+  margin: 0 2rem;
+  background-size: contain;
+}
+
+.separator2{
+transform: translateY(-2.6rem);
+}
+
+/* Desktop version */
+@media (min-width: 768px){
+
+html, body{
+  overflow-x: auto;
+}
+
+.menu-icon {
+  display: none;
+}
+
+nav {
+  position: relative;
+  top: 0;
+}
+
+nav ul {
+  max-height: 4rem;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-flex;
+  padding: 0;
+}
+nav ul li a {
+  padding: 1.2rem;
+}
+
+.Second_part{
+margin: 0 2rem;
+padding: 5rem 0 5rem 0;
+}
+
+.Second_part h1{
+  padding: 0 2rem;
+}
+
+.Second_part  p{
+  padding: 0 2rem;
+}
+
+.companies_logo{
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 1.5rem;
+  }
+  
+.comp_logo_4{
+  display: block;
+}
+
+/* Boom pavadinimo atkurimas*/
+.comp_logo_1 {
+  object-fit: cover;
+  object-position: 0;
+  transform: translate(0, 0);
+}
+
+.bottom_info{
+  display: grid;
+  gap: 6rem;
+  padding-left: 2rem;
+  grid-template-columns: 6fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+.Left_bottom{
+  grid-column: 1;
+}
+
+footer p:last-child{
+  display: block;
+}
+
+}
